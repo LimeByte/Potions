@@ -127,7 +127,10 @@
 							var id = $(this).find('id').text();
 							var type = $(this).find('type').text();
 							var duration = $(this).find('duration').text();
-							$('<tr></tr>').html('<td>'+icon+'</td><td>'+id+'</td><td>'+type+'</td><td>'+name+'</td>').appendTo('#chart');
+							$('<tr></tr>').html('<td><img src=\\"assets/img/potions/'+icon+'.png\\"/></td>'
+											   +'<td>'+id+'</td>'
+											   +'<td>'+type+'</td>'
+											   +'<td>'+name+'</td>').appendTo('#chart');
 						});
 					}
 				});
