@@ -1,0 +1,25 @@
+body {
+	padding-top: 60px;
+}
+
+form#search {
+	margin-top: 3px;
+}
+
+form#search i {
+	margin: 4px 4px;
+}
+
+form#search input {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	
+	width: 140px;
+	height: 14px;
+	
+	padding: 4px 6px;
+	
+	line-height: 20px;
+	font-size: 12px;
+}

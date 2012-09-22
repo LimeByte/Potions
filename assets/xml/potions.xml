@@ -1,0 +1,41 @@
+<potions>
+	<potion>
+		<name>Water Bottle</name>
+		<icon>water</icon>
+		<id>373</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Awkward Potion</name>
+		<icon>water</icon>
+		<id>373:16</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Thick Potion</name>
+		<icon>water</icon>
+		<id>373:32</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Mundane Potion</name>
+		<icon>water</icon>
+		<id>373:64</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Regeneration Potion</name>
+		<icon>regeneration</icon>
+		<id>373:8193</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+</potions>
