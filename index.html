@@ -80,7 +80,7 @@
 			}
 		
 			$(document).ready(function() {
-				log('Adding potions...');
+				log("Adding potions...");
 				$.ajax({
 					type: "GET",
 					url: "assets/xml/potions.xml", 
@@ -92,8 +92,8 @@
 									  getValue(this, 'id'),
 									  getValue(this, 'duration'));
 						});
-						log('Done!');
-						$(this).fadeIn("slow");
+						log("Done!");
+						$("#potion-table").fadeIn("slow");
 					}
 				});
 			});
