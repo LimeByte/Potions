@@ -1,5 +1,6 @@
 $("#search-bar").on("keyup", function() {
 	var term = $(this).val().toLowerCase();
+	var visible = 0;
 	
 	$("#potion-table tr").each(function(index) {
 		if (index !== 0) {
@@ -16,7 +17,14 @@ $("#search-bar").on("keyup", function() {
 			    $row.hide();
 			} else {
 			    $row.show();
+			    visible++;
 			}
 		}
 	});
+	
+	log(visible + " results found.");
 });
+
+function log(msg) {
+	console.log('[Potions] ' + msg);
+}
