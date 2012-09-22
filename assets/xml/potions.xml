@@ -36,6 +36,22 @@
 		<icon>regeneration</icon>
 		<id>373:8193</id>
 		<type>Standard</type>
-		<duration>N/A</duration>
+		<duration>0:45</duration>
+	</potion>
+	
+	<potion>
+		<name>Swiftness Potion</name>
+		<icon>swiftness</icon>
+		<id>373:8194</id>
+		<type>Standard</type>
+		<duration>3:00</duration>
+	</potion>
+		
+	<potion>
+		<name>Fire Resistance Potion</name>
+		<icon>fireresistance</icon>
+		<id>373:8195</id>
+		<type>Standard</type>
+		<duration>3:00</duration>
 	</potion>
 </potions>
