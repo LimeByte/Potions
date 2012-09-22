@@ -22,7 +22,9 @@ $("#search-bar").on("keyup", function() {
 		}
 	});
 	
-	log(visible + " results found.");
+	if (term) {
+		log(visible + " results found.");
+	}
 });
 
 function log(msg) {
