@@ -6,7 +6,7 @@ $("#search-bar").on("keyup", function() {
 			$row = $(this);
 			var value = "";
 			
-			this.find("td").each(function() {
+			$(this).find("td").each(function() {
 				value += $(this).text();
 			});
 			
