@@ -25,7 +25,7 @@
 						<a class="brand" href="#">Potions</a>
 						<form id="search" class="navbar-form pull-right">
 							<i class="icon-search icon-white"></i>
-							<input type="search" name="potion-search" placeholder="Search"/>
+							<input id="search-bar" type="search" name="potion-search" placeholder="Search"/>
 						</form>
 					</section>
 				</section>
@@ -58,8 +58,8 @@
 		<!-- Javascript -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- Potion Loader -->
+		<script src="assets/js/search.js"></script>
+
 		<script>
 			function log(msg) {
 				console.log('[Potions] ' + msg);
@@ -92,8 +92,12 @@
 									  getValue(this, 'id'),
 									  getValue(this, 'duration'));
 						});
-						log("Done!");
 						$("#potion-table").fadeIn("slow");
+						log("Done!");
+						
+						log("Adding search index...");
+						$('#search-bar').liveUpdate('#potion-table').focus();
+						log("Done!");
 					}
 				});
 			});
