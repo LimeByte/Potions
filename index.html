@@ -34,67 +34,11 @@
 			<section class="container">
 				<!-- Main Body -->
 				<section id="body">
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th></th>
-								<th>ID</th>
-								<th>Type</th>
-								<th>Potion</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><img src="assets/img/potions/water.png"/></td>
-								<td>373</td>
-								<td>Standard</td>
-								<td>Water Bottle</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/water.png"/></td>
-								<td>373:16</td>
-								<td>Standard</td>
-								<td>Awkward Potion</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/water.png"/></td>
-								<td>373:32</td>
-								<td>Standard</td>
-								<td>Thick Potion</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/water.png"/></td>
-								<td>373:64</td>
-								<td>Standard</td>
-								<td>Mundane Potion</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/regeneration.png"/></td>
-								<td>373:8193</td>
-								<td>Standard</td>
-								<td>Regeneration Potion (0:45)</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/swiftness.png"/></td>
-								<td>373:8194</td>
-								<td>Standard</td>
-								<td>Swiftness Potion (3:00)</td>
-							</tr>
-							<tr>
-								<td><img src="assets/img/potions/fireresistance.png"/></td>
-								<td>373:8195</td>
-								<td>Standard</td>
-								<td>Fire Resistance Potion (3:00)</td>
-							</tr>
-						</tbody>
-					</table>
-					
 					<table id="chart" class="table table-bordered">
 						<thead>
 							<tr>
 								<th></th>
 								<th>ID</th>
-								<th>Type</th>
 								<th>Potion</th>
 								<th>Duration</th>
 							</tr>
@@ -115,6 +59,19 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script>
+			function getValue(file, value) {
+				return $(file).find(value).text();
+			}
+		
+			function addPotion(name, icon, id, duration) {
+				$('<tr></tr>').html('<td><img src="assets/img/potions/'+icon+'.png" /></td>'
+						  + '<td>' + id + '</td>'
+						  + '<td>' + name + '</td>'
+						  + '<td>' + duration + '</td>')
+						  .appendTo('#chart');
+				console.log('Added ' + name + '.');
+			}
+		
 			$(document).ready(function(){
 				$.ajax({
 					type: "GET",
@@ -127,11 +84,8 @@
 							var id = $(this).find('id').text();
 							var type = $(this).find('type').text();
 							var duration = $(this).find('duration').text();
-							$('<tr></tr>').html('<td><img src=\"assets/img/potions/'+icon+'.png\"></img></td>'
-											   +'<td>'+id+'</td>'
-											   +'<td>'+type+'</td>'
-											   +'<td>'+name+'</td>'
-											   +'<td>'+duration+'</td>').appendTo('#chart');
+							
+							addPotion(name, icon, id, getValue(this, 'duration'));
 						});
 					}
 				});
