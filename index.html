@@ -34,7 +34,7 @@
 			<section class="container">
 				<!-- Main Body -->
 				<section id="body">
-					<table id="chart" class="table table-bordered">
+					<table id="potion-table" class="table table-bordered">
 						<thead>
 							<tr>
 								<th></th>
@@ -58,6 +58,8 @@
 		<!-- Javascript -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Potion Loader -->
 		<script>
 			function getValue(file, value) {
 				return $(file).find(value).text();
@@ -68,24 +70,21 @@
 						  + '<td>' + id + '</td>'
 						  + '<td>' + name + '</td>'
 						  + '<td>' + duration + '</td>')
-						  .appendTo('#chart');
+						  .appendTo('#potion-table');
 				console.log('Added ' + name + '.');
 			}
 		
-			$(document).ready(function(){
+			$(document).ready(function() {
 				$.ajax({
 					type: "GET",
 					url: "assets/xml/potions.xml", 
 					dataType: "xml",
 					success: function(xml) {	
 						$(xml).find('potion').each(function(){	
-							var name = $(this).find('name').text();
-							var icon = $(this).find('icon').text();
-							var id = $(this).find('id').text();
-							var type = $(this).find('type').text();
-							var duration = $(this).find('duration').text();
-							
-							addPotion(name, icon, id, getValue(this, 'duration'));
+							addPotion(getValue(this, 'name'),
+									  getValue(this, 'icon'),
+									  getValue(this, 'id'),
+									  getValue(this, 'duration'));
 						});
 					}
 				});
