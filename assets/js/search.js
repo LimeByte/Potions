@@ -6,7 +6,7 @@ $("#search-bar").on("keyup", function() {
 			$row = $(this);
 			var value = "";
 			
-			$("#potion-table tr td").each(function(index) {
+			this.find("td").each(function() {
 				value += $(this).text();
 			});
 			
