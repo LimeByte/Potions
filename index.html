@@ -61,17 +61,22 @@
 		
 		<!-- Potion Loader -->
 		<script>
+			function log(msg) {
+				console.log('[Potions] ' + msg);
+			}
+		
 			function getValue(file, value) {
 				return $(file).find(value).text();
 			}
 		
 			function addPotion(name, icon, id, duration) {
-				$('<tr></tr>').html('<td><img src="assets/img/potions/'+icon+'.png" /></td>'
-						  + '<td>' + id + '</td>'
-						  + '<td>' + name + '</td>'
-						  + '<td>' + duration + '</td>')
-						  .appendTo('#potion-table');
-				console.log('Added ' + name + '.');
+				$('<tr></tr>').html(
+				    '<td><img src="assets/img/potions/'+icon+'.png" /></td>'
+				  + '<td>' + id + '</td>'
+				  + '<td>' + name + '</td>'
+				  + '<td>' + duration + '</td>')
+				  .appendTo('#potion-table');
+				log('Added ' + name + ' (' + duration + ').');
 			}
 		
 			$(document).ready(function() {
