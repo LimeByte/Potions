@@ -18,10 +18,10 @@ jQuery.fn.liveUpdate = function(table) {
 	function filter(){
 		var term = jQuery.trim( jQuery(this).val().toLowerCase() ), scores = [];
     
-		if ( !term ) {
-			rows.show();
+		if (!term) {
+			rows.parents("tr").show();;
 		} else {
-			rows.hide();
+			rows.parents("tr").hide();
 			
 			cache.each(function(i){
 				var score = this.score(term);
@@ -33,7 +33,7 @@ jQuery.fn.liveUpdate = function(table) {
 			jQuery.each(scores.sort(function(a, b){ 
 					return b[0] - a[0];
 				}), function() {
-					jQuery(rows[ this[1] ]).show();
+					jQuery(rows[this[1]]).parents("tr").show();
 			});
 		}
 	}

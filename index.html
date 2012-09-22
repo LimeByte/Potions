@@ -23,7 +23,7 @@
 				<section class="navbar-inner">
 					<section class="container">
 						<a class="brand" href="#">Potions</a>
-						<form id="search" class="navbar-form pull-right">
+						<form id="search" class="navbar-form pull-right" method="get" autocomplete="off">
 							<i class="icon-search icon-white"></i>
 							<input id="search-bar" type="search" name="potion-search" placeholder="Search"/>
 						</form>
@@ -96,7 +96,7 @@
 						log("Done!");
 						
 						log("Adding search index...");
-						$('#search-bar').liveUpdate('#potion-table').focus();
+						$('#search-bar').liveUpdate('td').focus();
 						log("Done!");
 					}
 				});
