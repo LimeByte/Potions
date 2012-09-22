@@ -127,10 +127,11 @@
 							var id = $(this).find('id').text();
 							var type = $(this).find('type').text();
 							var duration = $(this).find('duration').text();
-							$('<tr></tr>').html('<td><img src=\"assets/img/potions/'+icon+'.png\"\/></td>'
+							$('<tr></tr>').html('<td><img src=\"assets/img/potions/'+icon+'.png\"></img></td>'
 											   +'<td>'+id+'</td>'
 											   +'<td>'+type+'</td>'
-											   +'<td>'+name+'</td>').appendTo('#chart');
+											   +'<td>'+name+'</td>'
+											   +'<td>'+duration+'</td>').appendTo('#chart');
 						});
 					}
 				});
