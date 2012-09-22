@@ -80,6 +80,7 @@
 			}
 		
 			$(document).ready(function() {
+				log('Adding potions...');
 				$.ajax({
 					type: "GET",
 					url: "assets/xml/potions.xml", 
@@ -93,6 +94,7 @@
 						});
 					}
 				});
+				log('Done!');
 			});
 		</script>
 	</body>
