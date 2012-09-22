@@ -1,40 +1,16 @@
-jQuery.fn.liveUpdate = function(table) {
-	table = jQuery(table);
+$("#search-bar").on("keyup", function() {
+	var value = $(this).val();
 	
-	if (table.length) {
-		var rows = table.children('tr'),
-		
-		cache = rows.map(function() {
-			return this.innerHTML.toLowerCase();
-		});
-  
-		this.keyup(filter).keyup().parents('form').submit(function() {
-			return false;
-		});
-	}
-    
-	return this;
-    
-	function filter(){
-		var term = jQuery.trim( jQuery(this).val().toLowerCase() ), scores = [];
-    
-		if (!term) {
-			rows.parents("tr").show();;
-		} else {
-			rows.parents("tr").hide();
+	$("table tr").each(function(index) {
+		if (index !== 0) {
+			$row = $(this);
+			var id = $row.find("td:first").text();
 			
-			cache.each(function(i){
-				var score = this.score(term);
-				if (score > 0) {
-					scores.push([score, i]);
-				}
-			});
-
-			jQuery.each(scores.sort(function(a, b){ 
-					return b[0] - a[0];
-				}), function() {
-					jQuery(rows[this[1]]).parents("tr").show();
-			});
+			if (id.indexOf(value) !== 0) {
+			    $row.hide();
+			} else {
+			    $row.show();
+			}
 		}
-	}
-};
+	});
+});
