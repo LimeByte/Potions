@@ -1,12 +1,18 @@
 $("#search-bar").on("keyup", function() {
-	var value = $(this).val();
+	var term = $(this).val().toLowerCase();
+	var value = "";
 	
-	$("table tr").each(function(index) {
+	$("#potion-table tr").each(function(index) {
 		if (index !== 0) {
 			$row = $(this);
-			var id = $row.find("td:first").text();
 			
-			if (id.indexOf(value) !== 0) {
+			$("#potion-table tr td").each(function(index) {
+				value += $(this).text();
+			});
+			
+			value = value.toLowerCase();
+			
+			if (value.indexOf(term) == -1) {
 			    $row.hide();
 			} else {
 			    $row.show();
