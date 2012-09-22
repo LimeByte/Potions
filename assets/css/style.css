@@ -2,6 +2,10 @@ body {
 	padding-top: 60px;
 }
 
+table#potion-table {
+	display: none;
+}
+
 form#search {
 	margin-top: 3px;
 }
