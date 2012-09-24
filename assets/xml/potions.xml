@@ -54,4 +54,12 @@
 		<type>Standard</type>
 		<duration>3:00</duration>
 	</potion>
+	
+	<potion>
+		<name>Poison Potion</name>
+		<icon>poison</icon>
+		<id>373:8196</id>
+		<type>Standard</type>
+		<duration>0:45</duration>
+	</potion>
 </potions>
