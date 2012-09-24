@@ -38,9 +38,9 @@
 						<thead>
 							<tr>
 								<th></th>
-								<th>ID</th>
 								<th>Potion</th>
 								<th>Duration</th>
+								<th>ID</th>
 							</tr>
 						</thead>
 					</table>
@@ -72,9 +72,9 @@
 			function addPotion(name, icon, id, duration) {
 				$('<tr></tr>').html(
 				    '<td><img src="assets/img/potions/'+icon+'.png" /></td>'
-				  + '<td>' + id + '</td>'
 				  + '<td>' + name + '</td>'
-				  + '<td>' + duration + '</td>')
+				  + '<td>' + duration + '</td>'
+				  + '<td>' + id + '</td>')
 				  .appendTo('#potion-table');
 				log('Added ' + name + ' (' + duration + ').');
 			}
