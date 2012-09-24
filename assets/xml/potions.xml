@@ -62,4 +62,60 @@
 		<type>Standard</type>
 		<duration>0:45</duration>
 	</potion>
+	
+	<potion>
+		<name>Healing Potion</name>
+		<icon>healing</icon>
+		<id>373:8197</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Night Vision Potion</name>
+		<icon>nightvision</icon>
+		<id>373:8198</id>
+		<type>Standard</type>
+		<duration>3:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Weakness Potion</name>
+		<icon>weakness</icon>
+		<id>373:8200</id>
+		<type>Standard</type>
+		<duration>1:30</duration>
+	</potion>
+	
+	<potion>
+		<name>Strength Potion</name>
+		<icon>strength</icon>
+		<id>373:8201</id>
+		<type>Standard</type>
+		<duration>3:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Slowness Potion</name>
+		<icon>slowness</icon>
+		<id>373:8202</id>
+		<type>Standard</type>
+		<duration>1:30</duration>
+	</potion>
+	
+	<potion>
+		<name>Harming Potion</name>
+		<icon>harming</icon>
+		<id>373:8204</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Invisibility Potion</name>
+		<icon>invisibility</icon>
+		<id>373:8206</id>
+		<type>Standard</type>
+		<duration>3:00</duration>
+	</potion>
 </potions>
