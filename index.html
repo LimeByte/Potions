@@ -18,42 +18,42 @@
 	</head>
 	
 	<body>
-			<!-- Header -->
-			<header id="main-header" class="navbar navbar-inverse navbar-fixed-top">
-				<section class="navbar-inner">
-					<section class="container">
-						<a class="brand" href="#">Potions</a>
-						<form id="search" class="navbar-form pull-right" method="get" autocomplete="off">
-							<i class="icon-search icon-white"></i>
-							<input id="search-bar" type="search" name="potion-search" placeholder="Search"/>
-						</form>
-					</section>
+		<!-- Header -->
+		<header id="main-header" class="navbar navbar-inverse navbar-fixed-top">
+			<section class="navbar-inner">
+				<section class="container">
+					<a class="brand" href="#">Potions</a>
+					<form id="search" class="navbar-form pull-right" method="get" autocomplete="off">
+						<i class="icon-search icon-white"></i>
+						<input id="search-bar" type="search" name="potion-search" placeholder="Search"/>
+					</form>
 				</section>
-			</header>
-		
-			<section class="container">
-				<!-- Main Body -->
-				<section id="body">
-					<table id="potion-table" class="table table-bordered">
-						<thead>
-							<tr>
-								<th></th>
-								<th>ID</th>
-								<th>Potion</th>
-								<th>Duration</th>
-							</tr>
-						</thead>
-					</table>
-				</section>
-				
-				<!-- Sidebar -->
-				<aside id="main-sidebar">
-				</aside>
-				
-				<!-- Footer -->
-				<footer id="main-footer">
-				</footer>
 			</section>
+		</header>
+	
+		<!-- Body -->
+		<section class="container">
+			<!-- Main Body -->
+			<section id="body">
+				<table id="potion-table" class="table table-bordered hidden">
+					<thead>
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Potion</th>
+							<th>Duration</th>
+						</tr>
+					</thead>
+				</table>
+			</section>
+			
+			<!-- Footer -->
+			<footer id="main-footer" class="hidden">
+				<pre>
+					&copy; LimeByte 2012
+				</pre>
+			</footer>
+		</section>
 		
 		<!-- Javascript -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -65,7 +65,7 @@
 		<script>
 			$(document).ready(function() {
 				addPotions(function() {
-					
+					$("#main-footer").fadeIn("slow");
 				});
 			});
 		</script>
