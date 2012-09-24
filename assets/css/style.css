@@ -2,6 +2,10 @@ body {
 	padding-top: 60px;
 }
 
+.container {
+	width: 940px;
+}
+
 .init-hidden {
 	display: none;
 }
@@ -35,6 +39,8 @@ a#github-link {
 
 #potion-table th#icon-column {
 	width: 26px;
+	min-width: 26px;
+	max-width: 26px;
 }
 
 #potion-table th#id-column {
