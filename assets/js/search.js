@@ -23,6 +23,6 @@ $("#search-bar").on("keyup", function() {
 	});
 	
 	if (term) {
-		log(visible + " results found.");
+		logInfo(visible + " results found.");
 	}
 });

@@ -5,5 +5,6 @@ function addPotion(name, icon, id, duration) {
 	  + '<td>' + duration + '</td>'
 	  + '<td>' + id + '</td>')
 	  .appendTo('#potion-table');
-	log('Added ' + name + ' (' + duration + ').');
+	
+	logDebug('Added ' + name + ' (' + duration + ').');
 }

@@ -64,7 +64,7 @@
 
 		<script>
 			$(document).ready(function() {
-				log("Adding potions...");
+				logInfo("Adding potions...");
 				$.ajax({
 					type: "GET",
 					url: "assets/xml/potions.xml", 
@@ -77,7 +77,7 @@
 									  getValue(this, 'duration'));
 						});
 						$("#potion-table").fadeIn("slow");
-						log("Done!");
+						logInfo("Done!");
 					}
 				});
 			});
