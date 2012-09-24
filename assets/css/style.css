@@ -32,3 +32,15 @@ a#github-link {
 	margin-top: -3px;
 	margin-right: -3px;
 }
+
+th#icon-column {
+	width: 26px;
+}
+
+th#icon-column img {
+	padding: 0 4px;
+}
+
+th#id-column {
+	width: 80px;
+}
