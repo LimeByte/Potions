@@ -33,14 +33,14 @@ a#github-link {
 	margin-right: -3px;
 }
 
-th#icon-column {
+#potion-table th#icon-column {
 	width: 26px;
 }
 
-th#icon-column img {
-	padding: 0 4px;
+#potion-table th#id-column {
+	width: 80px;
 }
 
-th#id-column {
-	width: 80px;
+#potion-table td img {
+	padding: 0 4px;
 }
