@@ -2,7 +2,7 @@
 
 What is Potions?
 --------------
-Potions is a mini-site which lists all the retrievable [Minecraft]() [potions]() along with useful details such as their icon and ID number.
+Potions is a mini-site which lists all the retrievable [Minecraft](http://minecraft.net) [potions](http://www.minecraftwiki.net/wiki/Potions) along with useful details such as their icon and ID number.
 
 **To visit the website please click [here](http://limebyte.github.com/Potions/ "To Potions!").**
 
