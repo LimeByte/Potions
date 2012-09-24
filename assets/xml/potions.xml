@@ -118,4 +118,124 @@
 		<type>Standard</type>
 		<duration>3:00</duration>
 	</potion>
+	
+	<potion>
+		<name>Regeneration Potion II</name>
+		<icon>regeneration</icon>
+		<id>373:8225</id>
+		<type>Standard</type>
+		<duration>0:22</duration>
+	</potion>
+	
+	<potion>
+		<name>Swiftness Potion II</name>
+		<icon>swiftness</icon>
+		<id>373:8226</id>
+		<type>Standard</type>
+		<duration>1:30</duration>
+	</potion>
+	
+	<potion>
+		<name>Poison Potion II</name>
+		<icon>poison</icon>
+		<id>373:8228</id>
+		<type>Standard</type>
+		<duration>0:22</duration>
+	</potion>
+	
+	<potion>
+		<name>Healing Potion II</name>
+		<icon>healing</icon>
+		<id>373:8229</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Strength Potion II</name>
+		<icon>strength</icon>
+		<id>373:8233</id>
+		<type>Standard</type>
+		<duration>1:30</duration>
+	</potion>
+	
+	<potion>
+		<name>Harming Potion II</name>
+		<icon>harming</icon>
+		<id>373:8236</id>
+		<type>Standard</type>
+		<duration>N/A</duration>
+	</potion>
+	
+	<potion>
+		<name>Regeneration Potion</name>
+		<icon>regeneration</icon>
+		<id>373:8257</id>
+		<type>Standard</type>
+		<duration>2:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Swiftness Potion</name>
+		<icon>swiftness</icon>
+		<id>373:8258</id>
+		<type>Standard</type>
+		<duration>8:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Fire Resistance Potion</name>
+		<icon>fireresistance</icon>
+		<id>373:8259</id>
+		<type>Standard</type>
+		<duration>8:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Poison Potion</name>
+		<icon>poison</icon>
+		<id>373:8260</id>
+		<type>Standard</type>
+		<duration>2:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Night Vision Potion</name>
+		<icon>nightvision</icon>
+		<id>373:8262</id>
+		<type>Standard</type>
+		<duration>8:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Weakness Potion</name>
+		<icon>weakness</icon>
+		<id>373:8264</id>
+		<type>Standard</type>
+		<duration>4:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Strength Potion</name>
+		<icon>strength</icon>
+		<id>373:8265</id>
+		<type>Standard</type>
+		<duration>8:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Slowness Potion</name>
+		<icon>slowness</icon>
+		<id>373:8266</id>
+		<type>Standard</type>
+		<duration>4:00</duration>
+	</potion>
+	
+	<potion>
+		<name>Invisibility Potion</name>
+		<icon>invisibility</icon>
+		<id>373:8270</id>
+		<type>Standard</type>
+		<duration>8:00</duration>
+	</potion>
 </potions>
