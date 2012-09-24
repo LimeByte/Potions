@@ -58,27 +58,11 @@
 		<!-- Javascript -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/potions.js"></script>
 		<script src="assets/js/search.js"></script>
 
 		<script>
-			function log(msg) {
-				console.log('[Potions] ' + msg);
-			}
-		
-			function getValue(file, value) {
-				return $(file).find(value).text();
-			}
-		
-			function addPotion(name, icon, id, duration) {
-				$('<tr></tr>').html(
-				    '<td><img src="assets/img/potions/'+icon+'.png" /></td>'
-				  + '<td>' + name + '</td>'
-				  + '<td>' + duration + '</td>'
-				  + '<td>' + id + '</td>')
-				  .appendTo('#potion-table');
-				log('Added ' + name + ' (' + duration + ').');
-			}
-		
 			$(document).ready(function() {
 				log("Adding potions...");
 				$.ajax({

@@ -26,7 +26,3 @@ $("#search-bar").on("keyup", function() {
 		log(visible + " results found.");
 	}
 });
-
-function log(msg) {
-	console.log('[Potions] ' + msg);
-}
