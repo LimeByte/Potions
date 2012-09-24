@@ -11,7 +11,6 @@ function addPotions(callback) {
 						  getValue(this, 'id'),
 						  getValue(this, 'duration'));
 			});
-			$("#potion-table").fadeIn("slow");
 			logInfo("Done!");
 			
 			callback();
