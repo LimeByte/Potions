@@ -7,9 +7,9 @@ function addPotions(callback) {
 		success: function(xml) {	
 			$(xml).find('potion').each(function() {	
 				addPotion(getValue(this, 'name'),
-						  getValue(this, 'icon'),
-						  getValue(this, 'id'),
-						  getValue(this, 'duration'));
+					  getValue(this, 'icon'),
+					  getValue(this, 'id'),
+					  getValue(this, 'duration'));
 			});
 			logInfo("Done!");
 			
