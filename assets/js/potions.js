@@ -19,14 +19,9 @@ function addPotions(callback) {
 	});
 }
 
-function addPotion(name, icon, id, type, duration) {
-	type = type.toLowerCase();
-	if (type == 'splash') {
-		icon = icon + type;
-	}
-	
+function addPotion(name, icon, id, type, duration) {	
 	$('<tr></tr>').html(
-		'<td><img src="assets/img/potions/'+icon+'.png" /></td>' +
+		'<td><img src="assets/img/potions/'+type.toLowerCase()+'/'+icon+'.png" /></td>' +
 		'<td>' + id + '</td>' +
 		'<td>' + name + '</td>' +
 		'<td>' + duration + '</td>'

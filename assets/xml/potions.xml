@@ -1,13 +1,15 @@
 <potions>
-    <!-- Standard Potions start here -->
+    <!-- Other Potions start here -->
 
 	<potion>
 		<name>Water Bottle</name>
 		<icon>water</icon>
 		<id>373</id>
-		<type>Standard</type>
+		<type>Other</type>
 		<duration>N/A</duration>
 	</potion>
+	
+	<!-- Standard Potions start here -->
 	
 	<potion>
 		<name>Awkward Potion</name>
