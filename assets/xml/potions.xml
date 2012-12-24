@@ -1,4 +1,6 @@
 <potions>
+    <!-- Standard Potions start here -->
+
 	<potion>
 		<name>Water Bottle</name>
 		<icon>water</icon>
@@ -238,4 +240,94 @@
 		<type>Standard</type>
 		<duration>8:00</duration>
 	</potion>
+	
+	<!-- Splash Potions start here -->
+	
+	<potion>
+        <name>Regeneration Splash Potion</name>
+        <icon>regeneration</icon>
+        <id>373:16385</id>
+        <type>Splash</type>
+        <duration>0:33</duration>
+    </potion>
+    
+    <potion>
+        <name>Swiftness Splash Potion</name>
+        <icon>swiftness</icon>
+        <id>373:16386</id>
+        <type>Splash</type>
+        <duration>2:15</duration>
+    </potion>
+    
+    <potion>
+        <name>Fire Resistance Splash Potion</name>
+        <icon>fireresistance</icon>
+        <id>373:16387</id>
+        <type>Splash</type>
+        <duration>2:15</duration>
+    </potion>
+    
+    <potion>
+        <name>Posion Splash Potion</name>
+        <icon>posion</icon>
+        <id>373:16388</id>
+        <type>Splash</type>
+        <duration>0:33</duration>
+    </potion>
+    
+    <potion>
+        <name>Healing Splash Potion</name>
+        <icon>healing</icon>
+        <id>373:16389</id>
+        <type>Splash</type>
+        <duration>N/A</duration>
+    </potion>
+    
+    <potion>
+        <name>Night Vision Splash Potion</name>
+        <icon>nightvision</icon>
+        <id>373:16390</id>
+        <type>Splash</type>
+        <duration>2:15</duration>
+    </potion>
+    
+    <potion>
+        <name>Weakness Splash Potion</name>
+        <icon>weakness</icon>
+        <id>373:16392</id>
+        <type>Splash</type>
+        <duration>1:07</duration>
+    </potion>
+    
+    <potion>
+        <name>Strength Splash Potion</name>
+        <icon>strength</icon>
+        <id>373:16393</id>
+        <type>Splash</type>
+        <duration>2:15</duration>
+    </potion>
+    
+    <potion>
+        <name>Slowness Splash Potion</name>
+        <icon>slowness</icon>
+        <id>373:16394</id>
+        <type>Splash</type>
+        <duration>1:07</duration>
+    </potion>
+    
+    <potion>
+        <name>Harming Splash Potion</name>
+        <icon>harming</icon>
+        <id>373:16396</id>
+        <type>Splash</type>
+        <duration>N/A</duration>
+    </potion>
+    
+    <potion>
+        <name>Invisibility Splash Potion</name>
+        <icon>invisibility</icon>
+        <id>373:16398</id>
+        <type>Splash</type>
+        <duration>2:15</duration>
+    </potion>
 </potions>
