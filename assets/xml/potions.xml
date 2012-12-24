@@ -9,31 +9,33 @@
 		<duration>N/A</duration>
 	</potion>
 	
-	<!-- Standard Potions start here -->
+	<!-- Base Potions start here -->
 	
 	<potion>
 		<name>Awkward Potion</name>
-		<icon>water</icon>
+		<icon>awkward</icon>
 		<id>373:16</id>
-		<type>Standard</type>
+		<type>Base</type>
 		<duration>N/A</duration>
 	</potion>
 	
 	<potion>
 		<name>Thick Potion</name>
-		<icon>water</icon>
+		<icon>thick</icon>
 		<id>373:32</id>
-		<type>Standard</type>
+		<type>Base</type>
 		<duration>N/A</duration>
 	</potion>
 	
 	<potion>
 		<name>Mundane Potion</name>
-		<icon>water</icon>
+		<icon>mundane</icon>
 		<id>373:64</id>
-		<type>Standard</type>
+		<type>Base</type>
 		<duration>N/A</duration>
 	</potion>
+	
+	<!-- Standard Potions start here -->
 	
 	<potion>
 		<name>Regeneration Potion</name>
