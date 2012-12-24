@@ -9,6 +9,7 @@ function addPotions(callback) {
 				addPotion(getValue(this, 'name'),
 					  getValue(this, 'icon'),
 					  getValue(this, 'id'),
+					  getValue(this, 'type'),
 					  getValue(this, 'duration'));
 			});
 			logInfo("Done!");
@@ -18,7 +19,12 @@ function addPotions(callback) {
 	});
 }
 
-function addPotion(name, icon, id, duration) {
+function addPotion(name, icon, id, type, duration) {
+	type = type.toLowerCase();
+	if (type == 'splash') {
+		icon = icon + type;
+	}
+	
 	$('<tr></tr>').html(
 		'<td><img src="assets/img/potions/'+icon+'.png" /></td>' +
 		'<td>' + id + '</td>' +
